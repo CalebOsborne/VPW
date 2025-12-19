@@ -1831,7 +1831,13 @@ footer {
         display: none !important;
     }
 
-    /* Show about couple photo on mobile */
+    /* Show about couple photo on mobile - wrap together */
+    .about-wrapper-new {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
     .about-image-container,
     .about-couple-photo {
         display: block !important;
@@ -1839,13 +1845,19 @@ footer {
 
     .about-image-container {
         max-width: 100%;
-        margin: 2rem auto;
+        margin: 0 auto;
+        order: 1;
     }
 
     .about-couple-photo {
         width: 100%;
         height: auto;
         min-height: auto;
+    }
+
+    .about-content-new {
+        order: 2;
+        margin-top: 0;
     }
 
     /* Simplify hero section */
