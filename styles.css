@@ -1774,18 +1774,30 @@ footer {
         display: none;
     }
 
-    /* Show logo in hero on mobile */
+    /* Hide "Welcome to" and "Volunteer Patchwork" text on mobile */
+    .hero-label {
+        display: none !important;
+    }
+
+    .hero-title {
+        display: none !important;
+    }
+
+    /* Show logo in hero on mobile - make it large and visible */
     .hero-logo-mobile {
-        display: block;
+        display: block !important;
         text-align: center;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
+        width: 100%;
     }
 
     .hero-logo-image {
-        height: 60px;
+        height: 120px;
         width: auto;
-        max-width: 200px;
+        max-width: 280px;
         object-fit: contain;
+        margin: 0 auto;
+        display: block;
     }
 
     /* Hide desktop hero image */
